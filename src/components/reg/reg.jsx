@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./reg.css";
 
+async function AUTH() {}
+
 const Regestrate = (props) => {
 	const [input, setInput] = useState("");
 	const [error, setError] = useState(null);
