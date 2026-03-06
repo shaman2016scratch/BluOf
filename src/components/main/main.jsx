@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./reg.css";
+import "./main.css";
 
-const Regestrate = (props) => {
+const Main = (props) => {
 	const [input, setInput] = useState("");
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
 	return ();
 };
 
-export default Regestrate;
+export default Main;
