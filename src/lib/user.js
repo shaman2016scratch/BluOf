@@ -13,6 +13,7 @@ const isLogin = async () => {
 }
 const getMyUser = async () => {
     try {
+        let token = localStorage.getItem('bluof-session-token')
         let data = await fetch('https://api-shaman2016.vercel.app/BluOf/session', {
             headers: {
                 sessionToken: token
