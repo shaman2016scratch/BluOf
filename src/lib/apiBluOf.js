@@ -1,3 +1,5 @@
+import { installFB, settingProjectFB, isInstallFB, getErrFB } from './firebaseApi.js'
+
 const getData = async () => {
     try {
         let out = await fetch('https://api-shaman2016.vercel.app/BluOf/dbApi/getData/')

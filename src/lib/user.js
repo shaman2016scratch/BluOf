@@ -1,3 +1,4 @@
+import { installFB, settingProjectFB, isInstallFB, getErrFB } from './firebaseApi.js'
 import { getData } from './apiBluOf.js'
 
 const isLogin = async () => {
