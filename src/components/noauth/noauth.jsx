@@ -6,7 +6,7 @@ const Noauth = (props) => {
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
 	return (
-        <div class='noauth'></div>
+        <div class='noauth' id='noauth'></div>
     );
 };
 
