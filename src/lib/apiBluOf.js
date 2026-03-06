@@ -1,6 +1,6 @@
 const getData = async () => {
     try {
-        let out = await fetch('https://api-shaman2016.vercel.app/BluOf/getData/')
+        let out = await fetch('https://api-shaman2016.vercel.app/BluOf/dbApi/getData/')
         out = await out.json()
         return out
     } catch (error) {
