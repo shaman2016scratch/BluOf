@@ -6,3 +6,4 @@ const getData = async () => {
         console.error(error.message)
     }
 }
+export { getData }
