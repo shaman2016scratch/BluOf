@@ -1,3 +1,5 @@
+import { getData } from './apiBluOf.js'
+
 const isLogin = async () => {
     try {} catch (error) {
         console.error(error.message)
