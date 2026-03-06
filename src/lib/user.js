@@ -18,3 +18,4 @@ const getUser = async (id) => {
         console.error(error.message)
     }
 }
+export { isLogin, getMyUser, getUser }
