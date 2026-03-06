@@ -6,7 +6,11 @@ const Regestrate = (props) => {
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
 	return (
-		<div class='noauth'></div>
+		<div class='noauth'>
+			<input id="name"/>
+			<input id="password"/>
+			<button onclick='AUTH()'>AUTH</button>
+		</div>
 	);
 };
 

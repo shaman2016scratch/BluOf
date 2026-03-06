@@ -6,7 +6,11 @@ const Login = (props) => {
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
 	return (
-		<div class='login'></div>
+		<div class='login'>
+			<input id="name"/>
+			<input id="password"/>
+			<button onclick='login()'>LOGIN</button>
+		</div>
 	);
 };
 
