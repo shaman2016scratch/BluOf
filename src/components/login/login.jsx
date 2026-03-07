@@ -4,7 +4,7 @@ import "./login.css";
 async function login() {
 	let data = await fetch('https://api-shaman2016.vercel.app/BluOf/login', {
 		body: {
-			username: document.getElementById('name'),
+			username: document.getElementById('username'),
 			password: document.getElementById('password')
 		}
 	})
@@ -24,7 +24,7 @@ const Login = (props) => {
 	const [loading, setLoading] = useState(false);
 	return (
 		<div class='login' id='login'>
-			<input id="name"/>
+			<input id="username"/>
 			<input id="password"/>
 			<button onClick={() => login()}>LOGIN</button>
 		</div>

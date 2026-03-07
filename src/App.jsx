@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Regestrate from "./components/reg/reg.jsx";
-import Login from "./components/login/login.jsx"; 
+import Main from "./components/main/main.jsx";
+import Noauth from "./components/noauth/noauth.jsx"; 
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 

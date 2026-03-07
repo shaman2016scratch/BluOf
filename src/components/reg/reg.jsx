@@ -9,8 +9,9 @@ const Regestrate = (props) => {
 	const [loading, setLoading] = useState(false);
 	return (
 		<div class='noauth'>
-			<input id="name"/>
-			<input id="password"/>
+			<p>Your Username: </p><input id="username"/>
+			<p>Your Nickname: </p><input id="nickname"/>
+			<p>Your Password: </p><input id="password"/>
 			<button onclick='AUTH()'>AUTH</button>
 		</div>
 	);

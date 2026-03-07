@@ -22,7 +22,9 @@ const getMyUser = async () => {
             }
         })
         data = await data.json()*/
-        let data = {}
+        let data = {
+            'token': 'BluOf123456789098:qwertyuiopasdfghjklzxcvbnmqwer'
+        }
         return data
     } catch (error) {
         console.error(error.message)
