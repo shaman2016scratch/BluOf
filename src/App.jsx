@@ -5,18 +5,18 @@ import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
 const App = () => {
-	let token
-	if (isLogin()) {
-		token = getMyUser().session
-	} else {
-		token = undefined
-	}
+	const [token, setTokenState] = useState(
+	    localStorage.getItem('bluof-session-token'),
+	);
 	return (
 		<div className="app-viewport">
 			{ token ? (
-				<main></main>
+			    <>
+				    <Main></Main>
+				</>
+				
 			) : (
-				<noauth></noauth>
+				<Noauth></Noauth>
 			) }
 		</div>
 	);
