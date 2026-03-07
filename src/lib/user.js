@@ -16,14 +16,9 @@ const getMyUser = async () => {
     try {
         // prototype
         let token = localStorage.getItem('bluof-session-token')
-        /*let data = await fetch('https://api-shaman2016.vercel.app/BluOf/session', {
-            headers: {
-                sessionToken: token
-            }
-        })
-        data = await data.json()*/
         let data = {
-            'token': 'BluOf123456789098:qwertyuiopasdfghjklzxcvbnmqwer'
+            'token': 'BluOf123456789098:qwertyuiopasdfghjklzxcvbnmqwer',
+            'name': 'User1234567890'
         }
         return data
     } catch (error) {

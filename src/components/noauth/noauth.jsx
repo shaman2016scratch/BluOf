@@ -9,8 +9,8 @@ const Noauth = (props) => {
         <div class='noauth' id='noauth'>
 			<div class="top-panel">
                 <a href="https://shaman2016scratch.github.io/BluOf/"><img src='https://shaman2016scratch.github.io/BluOf/bluof-logo.svg' /></a>
-				<p>LOG IN</p>
-				<p>AUTH</p>
+				<p onclick=''>LOG IN</p>
+				<p onclick=''>AUTH</p>
             </div>
 		</div>
     );
