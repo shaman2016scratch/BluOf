@@ -1,4 +1,4 @@
-import { installFB, settingProjectFB, isInstallFB, getErrFB } from './firebaseApi.js'
+import { installFB, settingProjectFB, isInstallFB, getErrFB, clearErrFB } from './firebaseApi.js'
 
 const getData = async () => {
     try {

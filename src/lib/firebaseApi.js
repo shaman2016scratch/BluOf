@@ -31,4 +31,6 @@ const isInstallFB = async () => {}
 
 const getErrFB = async () => {}
 
-export { installFB, settingProjectFB, isInstallFB, getErrFB }
+const clearErrFB = async () => {}
+
+export { installFB, settingProjectFB, isInstallFB, getErrFB, clearErrFB }

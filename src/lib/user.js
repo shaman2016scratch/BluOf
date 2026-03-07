@@ -1,4 +1,4 @@
-import { installFB, settingProjectFB, isInstallFB, getErrFB } from './firebaseApi.js'
+import { installFB, settingProjectFB, isInstallFB, getErrFB, clearErrFB } from './firebaseApi.js'
 import { getData } from './apiBluOf.js'
 
 const isLogin = async () => {
@@ -14,13 +14,15 @@ const isLogin = async () => {
 }
 const getMyUser = async () => {
     try {
+        // prototype
         let token = localStorage.getItem('bluof-session-token')
-        let data = await fetch('https://api-shaman2016.vercel.app/BluOf/session', {
+        /*let data = await fetch('https://api-shaman2016.vercel.app/BluOf/session', {
             headers: {
                 sessionToken: token
             }
         })
-        data = await data.json()
+        data = await data.json()*/
+        let data = {}
         return data
     } catch (error) {
         console.error(error.message)
