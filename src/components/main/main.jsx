@@ -9,7 +9,7 @@ const Main = (props) => {
 	return (
         <div class='main'>
 			<div class="top-panel">
-                <a href="https://shaman2016scratch.github.io/BluOf/"><img src='https://shaman2016scratch.github.io/BluOf/bluof-logo.svg' width='20' height='20' /></a>
+                <a href="https://shaman2016scratch.github.io/BluOf/"><img src='https://shaman2016scratch.github.io/BluOf/bluof-logo.svg' width='25' height='25' /></a>
 				<yourInTopPanel />
             </div>
 		</div>
