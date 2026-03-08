@@ -4,7 +4,7 @@ import Noauth from "./components/noauth/noauth.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
-const App = (page) => {
+const App = () => {
 	const [token, setTokenState] = useState(
 	    localStorage.getItem('bluof-session-token'),
 	);
