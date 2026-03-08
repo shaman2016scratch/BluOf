@@ -12,12 +12,10 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 body {
-	margin: 0;
-	display: flex;
-	min-width: 320px;
-	min-height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    color: #000000;
+    margin: 0;
 }
     footer {
       width: 100%;
