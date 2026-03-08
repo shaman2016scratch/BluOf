@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Main from "./components/main/main.jsx";
 import Noauth from "./components/noauth/noauth.jsx"; 
+import Credits from "./components/main/credits.jsx"; 
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
@@ -24,7 +25,9 @@ const App = () => {
 	    );
 	} else if (page === "/credits.html") {
 		return (
-		    <div className="app-viewport"></div>
+		    <div className="app-viewport">
+			    <Credits />
+			</div>
 	    );
 	}
 };
