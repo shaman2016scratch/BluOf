@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { creators, developers, helpers } from "../lib/credits.js"
+import { creators, developers, helpers } from "../../lib/credits.js"
 import "./main.css";
 
 const Credits = (props) => {
