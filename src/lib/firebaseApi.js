@@ -20,17 +20,68 @@ const installFB = async () => {
             loadScript("https://www.gstatic.com/firebasejs/8.10.1/firebase-remote-config.js"),
             loadScript("https://www.gstatic.com/firebasejs/8.10.1/firebase-performance.js")
         ]);
+        window.fbData = {
+            'firebase': null,
+            'db': null,
+            'auth': null,
+            'lastErrorMessage': null,
+            'firestore': null,
+            'storage': null,
+            'functions': null,
+            'analytics': null,
+            'remoteConfig': null,
+            'performance': null
+        }
+        window.fbInst = true
     } catch (error) {
         console.error(error.message)
     }
 }
 
-const settingProjectFB = async () => {}
+const settingFB = async (config) => {
+    if (window.fbInst) {
+        try {
+            if (window.firebase.apps.length) { 
+               fbData.firebase = window.firebase.app(); 
+            } else { 
+               fbData.firebase = window.firebase.initializeApp(config); 
+            } 
+            fbData.auth = firebase.auth(); 
+            fbData.db = firebase.database(); 
+            fbData.firestore = firebase.firestore(); 
+            fbData.storage = firebase.storage(); 
+            fbData.functions = firebase.functions(); 
+            fbData.analytics = firebase.analytics();
+            fbData.remoteConfig = firebase.remoteConfig();
+            fbData.performance = firebase.performance();
+        } catch (error) {
+            console.error(error.message)
+        }
+    } else {
+        console.error('FireBasr SDK is not installed')
+    }
+}
 
-const isInstallFB = async () => {}
+const isInstallFB = async () => {
+    if (window.fbInst) {
+        return true
+    } else {
+        return false
+    }
+}
 
-const getErrFB = async () => {}
+const getErrFB = async () => {
+    return fbData.lastErrorMessage
+}
 
-const clearErrFB = async () => {}
+const clearErrFB = async () => {
+    fbData.lastErrorMessage = ''
+}
 
-export { installFB, settingProjectFB, isInstallFB, getErrFB, clearErrFB }
+const singUpFB = async (email, password) => {}
+
+const singInFB = async (email, password) => {}
+
+const settingsProjectFB = async (ak, id, dbUrl) => {}
+
+export { installFB, settingFB, isInstallFB, getErrFB, clearErrFB, singUpFB, singInFB, settingsProjectFB }
