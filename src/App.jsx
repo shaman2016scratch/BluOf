@@ -10,7 +10,7 @@ const App = () => {
 	const [token, setTokenState] = useState(
 	    localStorage.getItem('bluof-session-token'),
 	);
-	if (page === "/") {
+	if (page === "/" || page === "/index.html" || page === "/index.html") {
 	    return (
 		    <div className="app-viewport">
 			    { token ? (
@@ -23,7 +23,7 @@ const App = () => {
 			    ) }
 		    </div>
 	    );
-	} else if (page === "/credits.html") {
+	} else if (page === "/credits.html" || page === "/credits") {
 		return (
 		    <div className="app-viewport">
 			    <Credits />
