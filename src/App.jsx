@@ -5,10 +5,11 @@ import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
 const App = () => {
+	const page = window.location.pathname.split("/BluOf")[1]
 	const [token, setTokenState] = useState(
 	    localStorage.getItem('bluof-session-token'),
 	);
-	if (page === "main") {
+	if (page === "/") {
 	    return (
 		    <div className="app-viewport">
 			    { token ? (
@@ -21,7 +22,7 @@ const App = () => {
 			    ) }
 		    </div>
 	    );
-	} else if (page === "credits") {
+	} else if (page === "/credits.html") {
 		return (
 		    <div className="app-viewport"></div>
 	    );
