@@ -29,6 +29,12 @@ const App = () => {
 			    <Credits />
 			</div>
 	    );
+	} else if (page === "/about.html" || page === "/about") {
+		return (
+		    <div className="app-viewport">
+			    <h1>About BluOf</h1>
+			</div>
+	    );
 	}
 };
 
