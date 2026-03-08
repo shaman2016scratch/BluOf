@@ -10,5 +10,13 @@ export default defineConfig({
       }
     })
   ],
-  base: '/BluOf'
+  base: '/BluOf',
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        credits: resolve(__dirname, 'credits.html')
+      }
+    }
+  }
 })
