@@ -8,7 +8,8 @@ createRoot(document.getElementById("root")).render(
 		<App />
 		<footer>
             <div class="container">
-                <p class="footer-text">© 2026, BluOf all rights reserved</p>
+                <p class="footer-text">© 2026, BluOf. A modern social network with extensive functionality and open source code</p>
+				<p class="footer-text">By BluOf</p>
             </div>
         </footer>
 	</StrictMode>,
