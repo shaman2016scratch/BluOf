@@ -1,7 +1,7 @@
 import { useState } from "react";
 import yourInTopPanel from "../yourInTopPanel/yourInTopPanel.jsx";
 
-const Main = (props) => {
+const TP = (props) => {
 	const [input, setInput] = useState("");
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
@@ -26,4 +26,4 @@ const Main = (props) => {
 	);
 };
 
-export default Main;
+export default TP;
