@@ -1,4 +1,5 @@
 import { useState } from "react";
+import yourInTopPanel from "../yourInTopPanel/yourInTopPanel.jsx";
 
 const Main = (props) => {
 	const [input, setInput] = useState("");
