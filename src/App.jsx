@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Main from "./components/main/main.jsx";
-import Noauth from "./components/noauth/noauth.jsx"; 
-import Credits from "./components/main/credits.jsx"; 
+import Noauth from "./components/noauth/noauth.jsx";
+import Credits from "./components/main/credits.jsx";
+import Login from "./components/login/login.jsx";
+import Regestrate from "./components/reg/reg.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
@@ -33,6 +35,36 @@ const App = () => {
 		return (
 		    <div className="app-viewport">
 			    <h1>About BluOf</h1>
+			</div>
+	    );
+	} else if (page === "/login.html" || page === "/login") {
+		return (
+		    <div className="app-viewport">
+				{ token ? (
+				    <>
+						<h1>ERROR 403</h1>
+				        <p>You are logged in</p>
+					</>
+				) : (
+				    <>
+					    <Login />
+					</>
+				) }
+			</div>
+	    );
+	} else if (page === "/reg.html" || page === "/reg") {
+		return (
+		    <div className="app-viewport">
+				{ token ? (
+				    <>
+					    <h1>ERROR 403</h1>
+				        <p>You are logged in</p>
+					</>
+				) : (
+				    <>
+						<Regestrate />
+					</>
+				) }
 			</div>
 	    );
 	}
