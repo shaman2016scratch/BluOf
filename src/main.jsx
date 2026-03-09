@@ -3,8 +3,6 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 
-let token = localStorage.getItem('bluof-session-token'),
-
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<App />
