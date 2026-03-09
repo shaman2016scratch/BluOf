@@ -5,6 +5,9 @@ const Main = (props) => {
 	const [input, setInput] = useState("");
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
+	const [token, setTokenState] = useState(
+	    localStorage.getItem('bluof-session-token'),
+	);
 	return (
 		{ token ? (
             <>
