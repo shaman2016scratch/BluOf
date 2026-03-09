@@ -4,7 +4,7 @@ import Noauth from "./components/noauth/noauth.jsx";
 import Credits from "./components/main/credits.jsx";
 import Login from "./components/login/login.jsx";
 import Regestrate from "./components/reg/reg.jsx";
-import TP from "./components/tp/tp.tsx";
+import TP from "./components/tp/tp.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
