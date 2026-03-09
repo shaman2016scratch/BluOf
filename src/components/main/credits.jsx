@@ -8,9 +8,6 @@ const Credits = (props) => {
 	const [loading, setLoading] = useState(false);
     return (
         <div class='main'>
-			<div class="top-panel">
-                <a href="https://shaman2016scratch.github.io/BluOf/"><img src='https://shaman2016scratch.github.io/BluOf/bluof-logo.svg' width='25' height='25' /></a>
-            </div>
             <h1>Credits</h1>
             <h2>Creators</h2>
             <p><b>{creators[0].name}</b> {creators[0].role}</p>
