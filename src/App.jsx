@@ -5,6 +5,7 @@ import Credits from "./components/main/credits.jsx";
 import Login from "./components/login/login.jsx";
 import Regestrate from "./components/reg/reg.jsx";
 import TP from "./components/tp/tp.jsx";
+import TOS from "./components/main/tos.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
@@ -78,6 +79,7 @@ const App = () => {
 		    <div className="app-viewport">
 				<TP />
 				<h1>Terms of Service</h1>
+				<TOS />
 			</div>
 	    );
 	}
