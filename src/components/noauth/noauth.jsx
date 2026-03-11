@@ -8,6 +8,7 @@ const Noauth = (props) => {
 	return (
         <div class='noauth' id='noauth'>
 			<h1><img src='https://shaman2016scratch.github.io/BluOf/bluof-logo.svg' width='45' height='45' />BluOf</h1>
+			<p>Hello! Welcome to BluOf! Here, we welcome both regular users and developers and teachers. Unlike many social networks, this social network is aimed at people of all ages, starting from the age of 9</p>
 		</div>
     );
 };

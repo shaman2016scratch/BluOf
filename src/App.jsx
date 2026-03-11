@@ -73,6 +73,13 @@ const App = () => {
 				) }
 			</div>
 	    );
+	} else if (page === "/ToS.html" || page === "/ToS") {
+		return (
+		    <div className="app-viewport">
+				<TP />
+				<h1>Terms of Service</h1>
+			</div>
+	    );
 	}
 };
 
