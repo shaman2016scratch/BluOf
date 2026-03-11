@@ -5,7 +5,7 @@ import "./main.css";
 function githubUser(item) {
     if (!item.linkOnGithub) {
         return (
-            <p>Github</p>
+            Github
         );
     } else {
         let link = `https://github.com/${item.linkOnGithub}`
