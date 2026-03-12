@@ -12,7 +12,8 @@ createRoot(document.getElementById("root")).render(
 				<p class="footer-text">By BluOf</p>
 				<p class='footer-text'>
 				    <a href='/BluOf/credits.html'>CREDITS</a>|
-					<a href='/BluOf/about.html'>ABOUT</a>
+					<a href='/BluOf/about.html'>ABOUT</a>|
+					<a href='/BluOf/ToS.html'>Terms Of Servise and Use</a>
 				</p>
             </div>
         </footer>
