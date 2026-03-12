@@ -15,6 +15,7 @@ createRoot(document.getElementById("root")).render(
 					<a href='/BluOf/about.html'>ABOUT</a>|
 					<a href='/BluOf/ToS.html'>Terms Of Servise and Use</a>
 				</p>
+				<p class="footer-text">Version: 0.0.1 Alpha</p>
             </div>
         </footer>
 	</StrictMode>,
