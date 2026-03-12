@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")).render(
 		<footer>
             <div class="container">
                 <p class="footer-text">© 2026, BluOf. A modern social network with extensive functionality and open source code</p>
-				<p class="footer-text">By BluOf</p>
+				<p class="footer-text">By BluOf Foundation</p>
 				<p class='footer-text'>
 				    <a href='/BluOf/credits.html'>CREDITS</a>|
 					<a href='/BluOf/about.html'>ABOUT</a>|
