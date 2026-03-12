@@ -20,6 +20,13 @@ const TOS = (props) => {
 			<p>3.3. Host: viruses, malware, or mining code</p>
 			<p>3.4. Attempts to bypass the security policies of the BluOf Foundation or other companies, or to destabilize their operations</p>
 			<p>3.5. Automated data collection (scraping) without official permission</p>
+			<h2>4. Responsibility of the parties</h2>
+			<p>4.1. The user is fully responsible for the content of their posts.</p>
+			<p>4.2. The BluOf Foundation has the right to remove any post or profile that threatens the service</p>
+			<h2>5. Termination of access</h2>
+			<p>For violating the rules or terms of use, we may restrict access to the service/services without prior notice.</p>
+			<h2>6. Intellectual property </h2>
+			<p>All algorithms, code, designs, and mechanisms are the property of the BluOf Foundation</p>
 		</div>
     );
 };
