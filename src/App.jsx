@@ -82,6 +82,12 @@ const App = () => {
 				<TOS />
 			</div>
 	    );
+	} else if (window.location.pathname.split("/BluOf/docs")[1] === '/') {
+		return (
+		    <div className="app-viewport">
+				<TP />
+			</div>
+	    );
 	}
 };
 
