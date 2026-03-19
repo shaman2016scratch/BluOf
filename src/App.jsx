@@ -6,6 +6,8 @@ import Login from "./components/login/login.jsx";
 import Regestrate from "./components/reg/reg.jsx";
 import TP from "./components/tp/tp.jsx";
 import TOS from "./components/main/tos.jsx";
+import PP from "./components/main/pp.jsx";
+import Rules from "./components/main/rules.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
@@ -86,6 +88,21 @@ const App = () => {
 		return (
 		    <div className="app-viewport">
 				<TP />
+			</div>
+	    );
+	} else if (page === "/rules.html" || page === "/rules") {
+		return (
+		    <div className="app-viewport">
+				<TP />
+				<Rules />
+			</div>
+	    );
+	} else if (page === "pp.html" || page === "/pp") {
+		return (
+		    <div className="app-viewport">
+				<TP />
+				<h1>Terms of Service</h1>
+				<PP />
 			</div>
 	    );
 	}
