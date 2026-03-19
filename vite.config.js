@@ -20,7 +20,9 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         login: resolve(__dirname, 'login.html'),
         reg: resolve(__dirname, 'reg.html'),
-        ToS: resolve(__dirname, 'ToS.html')
+        ToS: resolve(__dirname, 'ToS.html'),
+        PP: resolve(__dirname, 'pp.html'),
+        rules: resolve(__dirname, 'rules.html'),
       }
     }
   }
