@@ -8,6 +8,8 @@ if (!localStorage.getItem('bluof-language')) {
 	localStorage.setItem('bluof-language', 'en')
 }
 
+function updLang() {localStorage.setItem('bluof-language', document.getElementById('languageUser').value)}
+
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<App />
@@ -28,7 +30,7 @@ createRoot(document.getElementById("root")).render(
 				<select id='languageUser'>
                     <option value="en" id='langEn'>English</option>
                     <option value="ru" id='langRu'>Русский</option>
-                </select><button onСlick={function () {localStorage.setItem('bluof-language', document.getElementById('languageUser').value)}}>SET LANG</button>
+                </select><button onСlick={updLang}>SET LANG</button>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>
