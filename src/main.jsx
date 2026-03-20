@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App.jsx";
 import metadata from "./lib/metadata.js";
 
+if (!localStorage.getItem('bluof-language')) {
+	localStorage.setItem('bluof-language', 'en')
+}
+
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<App />
@@ -24,18 +28,13 @@ createRoot(document.getElementById("root")).render(
 				<select id='languageUser'>
                     <option value="en" id='langEn'>English</option>
                     <option value="ru" id='langRu'>Русский</option>
-                </select>
+                </select><button onclick="
+				    document.getElementById('languageUser').addEventListener('change', function(event) {
+	                    localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
+                    })
+				"></button>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>
-		<script>
-			document.getElementById('languageUser').addEventListener('change', function(event) {
-	            localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
-            })
-		</script>
 	</StrictMode>
 );
-
-if (!localStorage.getItem('bluof-language')) {
-	localStorage.setItem('bluof-language', 'en')
-}
