@@ -29,9 +29,7 @@ createRoot(document.getElementById("root")).render(
                     <option value="en" id='langEn'>English</option>
                     <option value="ru" id='langRu'>Русский</option>
                 </select><button onclick="
-				    document.getElementById('languageUser').addEventListener('change', function(event) {
-	                    localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
-                    })
+	                localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
 				"></button>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
