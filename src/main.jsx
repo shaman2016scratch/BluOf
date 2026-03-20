@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")).render(
 					<a href='/BluOf/ToS.html'>Rules</a>
 				</p>
 				<p class="footer-text">Version: {metadata.version}</p>
-				<p class="footer-text">the website is written in JavaScript React and JavaScript by the BluOf Foundation</p>
+				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>
 	</StrictMode>
