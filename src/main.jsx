@@ -30,7 +30,7 @@ createRoot(document.getElementById("root")).render(
                     <option value="ru" id='langRu'>Русский</option>
                 </select><button onclick="
 	                localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
-				"></button>
+				">SET LANG</button>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>
