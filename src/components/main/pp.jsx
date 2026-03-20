@@ -6,7 +6,9 @@ const PP = (props) => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     return (
-        <div class='main'></div>
+        <div class='main'>
+            <h1>Privacy Policy</h1>
+        </div>
     );
 };
 

@@ -101,7 +101,6 @@ const App = () => {
 		return (
 		    <div className="app-viewport">
 				<TP />
-				<h1>Terms of Service</h1>
 				<PP />
 			</div>
 	    );

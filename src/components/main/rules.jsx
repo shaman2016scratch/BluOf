@@ -6,7 +6,9 @@ const Rules = (props) => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     return (
-        <div class='main'></div>
+        <div class='main'>
+            <h1>Rules of service</h1>
+        </div>
     );
 };
 

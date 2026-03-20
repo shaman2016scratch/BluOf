@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")).render(
 				<p class='footer-text'>
 				    <a href='/BluOf/credits.html'>CREDITS</a>|
 					<a href='/BluOf/about.html'>ABOUT</a>|
-					<a href='/BluOf/ToS.html'>Terms Of Servise and Use</a>|
+					<a href='/BluOf/ToS.html'>Terms Of Service and Use</a>|
 					<a href='/BluOf/ToS.html'>Privacy Policy</a>|
 					<a href='/BluOf/ToS.html'>Rules</a>
 				</p>
