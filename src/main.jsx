@@ -35,14 +35,6 @@ if (!localStorage.getItem('bluof-language')) {
 	localStorage.setItem('bluof-language', 'en')
 }
 
-if (localStorage.getItem('bluof-language') == 'en') {
-	document.getElementById('langEn').selected === 'true'
-	document.getElementById('langRu').selected === 'false'
-} else if (localStorage.getItem('bluof-language') == 'ru') {
-	document.getElementById('langRu').selected === 'true'
-	document.getElementById('langEn').selected === 'false'
-}
-
 document.getElementById('languageUser').addEventListener('change', function(event) {
 	localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
 })
