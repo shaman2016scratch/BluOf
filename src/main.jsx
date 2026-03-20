@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
+import metadata from "./lib/metadata.js";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
@@ -14,9 +15,11 @@ createRoot(document.getElementById("root")).render(
 				<p class='footer-text'>
 				    <a href='/BluOf/credits.html'>CREDITS</a>|
 					<a href='/BluOf/about.html'>ABOUT</a>|
-					<a href='/BluOf/ToS.html'>Terms Of Servise and Use</a>
+					<a href='/BluOf/ToS.html'>Terms Of Servise and Use</a>|
+					<a href='/BluOf/ToS.html'>Privacy Policy</a>|
+					<a href='/BluOf/ToS.html'>Rules</a>
 				</p>
-				<p class="footer-text">Version: 0.0.1 Alpha</p>
+				<p class="footer-text">Version: {metadata.version}</p>
             </div>
         </footer>
 	</StrictMode>
