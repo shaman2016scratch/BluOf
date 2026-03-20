@@ -6,7 +6,7 @@ function githubUser(item) {
     if (!item.linkInGithub) {
         return ('Github');
     } else {
-        let link = `https://github.com/${item.linkInGithub}`
+        let link = `https://github.com/${item.githubName}`
         return (
             <a href={ link }>Github</a>
         );
@@ -17,10 +17,22 @@ function siteUser(item) {
     if (!item.linkSite) {
         return ('Web site');
     } else {
-        let link = `https://${item.linkSite}/`
-        return (
-            <a href={ link }>Web site</a>
-        );
+        if (item.linkSite === 'github') {
+            let link = `https://${item.githubName}.github.io/`
+            return (
+                <a href={ link }>Web site</a>
+            );
+        } else if (link.linkSite === 'vercel') {
+            let link = `https://${item.vercelSite}.vercel.app/`
+            return (
+                <a href={ link }>Web site</a>
+            );
+        } else {
+            let link = `https://${item.linkSite}/`
+            return (
+                <a href={ link }>Web site</a>
+            );
+        }
     }
 }
 
