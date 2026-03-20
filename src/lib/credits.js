@@ -2,7 +2,8 @@ const creators = [
     {
         'name': 'SHAMAN2016',
         'role': 'Main Creator',
-        'linkOnGithub': 'shaman2016scratch',
+        'linkInGithub': 'shaman2016scratch',
+        'linkSite': 'shaman2016scratch.github.io',
     }
 ]
 
@@ -10,12 +11,14 @@ const developers = [
     {
         'name': 'SHAMAN2016',
         'role': 'Main Programmist',
-        'linkOnGithub': 'shaman2016scratch',
+        'linkInGithub': 'shaman2016scratch',
+        'linkSite': 'shaman2016scratch.github.io',
     },
     {
         'name': 'Tagir14012014',
         'role': 'designer',
-        'linkOnGithub': 'tagir-scratch',
+        'linkInGithub': 'tagir-scratch',
+        'linkSite': 'tagir-scratch.github.io',
     },
     {
         'name': 'Scratch_Lobo',
@@ -27,12 +30,14 @@ const helpers = [
     {
         'name': 'SHAMAN2016',
         'role': 'Main Programmist, Creator',
-        'linkOnGithub': 'shaman2016scratch',
+        'linkInGithub': 'shaman2016scratch',
+        'linkSite': 'shaman2016scratch.github.io',
     },
     {
         'name': 'DiamondCat2026',
         'role': 'One DB (FireBase)',
-        'linkOnGithub': 'daimondcat1234567',
+        'linkInGithub': 'daimondcat1234567',
+        'linkSite': 'daimondcat1234567.github.io',
     }
 ]
 
