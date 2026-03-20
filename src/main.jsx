@@ -28,13 +28,14 @@ createRoot(document.getElementById("root")).render(
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>
+		<script>
+			document.getElementById('languageUser').addEventListener('change', function(event) {
+	            localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
+            })
+		</script>
 	</StrictMode>
 );
 
 if (!localStorage.getItem('bluof-language')) {
 	localStorage.setItem('bluof-language', 'en')
 }
-
-document.getElementById('languageUser').addEventListener('change', function(event) {
-	localStorage.setItem('bluof-language', document.getElementById('languageUser').value)
-})
