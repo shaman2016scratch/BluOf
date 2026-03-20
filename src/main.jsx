@@ -20,10 +20,10 @@ createRoot(document.getElementById("root")).render(
 					<a href='/BluOf/ToS.html'>Rules</a>
 				</p>
 				<p class="footer-text">Version: {metadata.version}</p>
-				<label for="languageUser">Your Language</label>
+				<label for="languageUser">Your Language: </label>
 				<select id='languageUser'>
-                    <option value="en">English</option>
-                    <option value="ru">Русский</option>
+                    <option value="en" id='langEn'>English</option>
+                    <option value="ru" id='langRu'>Русский</option>
                 </select>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
@@ -33,6 +33,12 @@ createRoot(document.getElementById("root")).render(
 
 if (!localStorage.getItem('bluof-language')) {
 	localStorage.setItem('bluof-language', 'en')
+}
+
+if (localStorage.getItem('bluof-language') == 'en') {
+	document.getElementById('langEn').selected
+} else if (localStorage.getItem('bluof-language') == 'ru') {
+	document.getElementById('langRu').selected
 }
 
 document.getElementById('languageUser').addEventListener('change', function(event) {
