@@ -13,7 +13,9 @@
     "classnames": "^2.5.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "libs8787": "github:shaman2016scratch/libs#main"
+    "libs8787": "github:shaman2016scratch/libs#main",
+    "blogs8787api.js": "github:shaman2016scratch/blogs8787api.js#main"
+    
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
