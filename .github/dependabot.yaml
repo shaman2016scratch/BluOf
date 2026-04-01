@@ -7,3 +7,4 @@ updates:
       interval: "daily"
     allow:
       - dependency-name: "libs8787"
+      - dependency-name: "blogs8787api.js"
