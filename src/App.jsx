@@ -88,7 +88,7 @@ const App = () => {
 		return (
 		    <div className="app-viewport">
 				<TP />
-				<h1>Main Page Documentation</h1>
+				<h1>Main Page in BluOf Documentation</h1>
 			</div>
 	    );
 	} else if (page === "/rules.html" || page === "/rules") {
