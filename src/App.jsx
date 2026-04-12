@@ -98,7 +98,7 @@ const App = () => {
 				<Rules />
 			</div>
 	    );
-	} else if (page === "pp.html" || page === "/pp") {
+	} else if (page === "/pp.html" || page === "/pp") {
 		return (
 		    <div className="app-viewport">
 				<TP />
