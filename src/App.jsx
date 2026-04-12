@@ -84,7 +84,7 @@ const App = () => {
 				<TOS />
 			</div>
 	    );
-	} else if (window.location.pathname.split("/BluOf/docs")[1] === '/') {
+	} else if (window.location.pathname.split("/BluOf/docs")[1] === '/' || window.location.pathname.split("/BluOf/docs")[1] === '/index' || window.location.pathname.split("/BluOf/docs")[1] === '/index.html') {
 		return (
 		    <div className="app-viewport">
 				<TP />
