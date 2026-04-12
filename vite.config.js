@@ -23,6 +23,7 @@ export default defineConfig({
         ToS: resolve(__dirname, 'ToS.html'),
         PP: resolve(__dirname, 'pp.html'),
         rules: resolve(__dirname, 'rules.html'),
+        docsMain: resolve(__dirname, 'docs/index.html'),
       }
     }
   }
