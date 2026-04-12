@@ -30,7 +30,7 @@ createRoot(document.getElementById("root")).render(
 				<select id='languageUser'>
                     <option value="en" id='langEn'>English</option>
                     <option value="ru" id='langRu'>Русский</option>
-                </select><button onСlick={updLang}>SET LANG</button>
+                </select><button onClick={() => updLang()}>SET LANG</button>
 				<p class="footer-text"><i>The website is written in JavaScript React and JavaScript by the BluOf Foundation</i></p>
             </div>
         </footer>

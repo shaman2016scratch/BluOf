@@ -8,6 +8,7 @@ import TP from "./components/tp/tp.jsx";
 import TOS from "./components/main/tos.jsx";
 import PP from "./components/main/pp.jsx";
 import Rules from "./components/main/rules.jsx";
+import DOCS from "./components/docs/docs.jsx";
 import { isLogin, getMyUser } from "./lib/user.js";
 import "./App.css";
 
@@ -16,7 +17,7 @@ const App = () => {
 	const [token, setTokenState] = useState(
 	    localStorage.getItem('bluof-session-token'),
 	);
-	if (page === "/" || page === "/index.html" || page === "/index.html") {
+	if (page === "/" || page === "/index.html" || page === "/index") {
 	    return (
 		    <div className="app-viewport">
 			    <TP />
@@ -88,6 +89,7 @@ const App = () => {
 		return (
 		    <div className="app-viewport">
 				<TP />
+				<DOCS page='main' />
 			</div>
 	    );
 	} else if (page === "/rules.html" || page === "/rules") {
