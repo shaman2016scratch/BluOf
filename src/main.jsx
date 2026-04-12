@@ -22,8 +22,8 @@ createRoot(document.getElementById("root")).render(
 				    <a href='/BluOf/credits.html'>CREDITS</a>|
 					<a href='/BluOf/about.html'>ABOUT</a>|
 					<a href='/BluOf/ToS.html'>Terms Of Service and Use</a>|
-					<a href='/BluOf/ToS.html'>Privacy Policy</a>|
-					<a href='/BluOf/ToS.html'>Rules</a>
+					<a href='/BluOf/pp.html'>Privacy Policy</a>|
+					<a href='/BluOf/rules.html'>Rules</a>
 				</p>
 				<p class="footer-text">Version: {metadata.version}</p>
 				<label for="languageUser">Your Language: </label>
