@@ -7,7 +7,7 @@ const Rules = (props) => {
     const [loading, setLoading] = useState(false);
     return (
         <div class='main'>
-            <h1>Rules of service</h1>
+            <h1>Rules of BluOf</h1>
         </div>
     );
 };
