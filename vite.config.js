@@ -24,6 +24,8 @@ export default defineConfig({
         PP: resolve(__dirname, 'pp.html'),
         rules: resolve(__dirname, 'rules.html'),
         docsMain: resolve(__dirname, 'docs/index.html'),
+        BluOs: resolve(__dirname, 'BluOS.html'),
+        projects: resolve(__dirname, 'projects.html')
       }
     }
   }

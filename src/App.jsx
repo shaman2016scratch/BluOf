@@ -105,6 +105,10 @@ const App = () => {
 				<PP />
 			</div>
 	    );
+	} else if (page === "/BluOS.html" || page === "/BluOS") {
+		return (
+		    <div className="app-viewport"></div>
+	    );
 	}
 };
 
